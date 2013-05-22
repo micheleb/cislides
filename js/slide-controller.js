@@ -82,7 +82,7 @@ SlideController.prototype.onMessage_ = function(e) {
   //   return;
   // }
 
-  if ('keyCode' in data) {
+  if (typeof data != 'string' && 'keyCode' in data) {
     var evt = document.createEvent('Event');
     evt.initEvent('keydown', true, true);
     evt.keyCode = data.keyCode;
