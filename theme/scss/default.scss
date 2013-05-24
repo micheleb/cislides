@@ -318,7 +318,7 @@ ul {
     position: absolute;
     font-weight: 600;
   }
-
+ 
   ul {
     margin-top: .5em;
   }
@@ -485,6 +485,31 @@ button:not(:disabled):active {
 .columns-2 {
   @include column-count(2);
 }
+
+.square{
+    display: block;
+    height: 1em;
+    width: 1em;
+    float: left;
+}
+.square.green2{
+  @extend .square;
+        background-color: $brand-green-secondary;
+}
+.square.red{
+  @extend .square;
+        background-color: $brand-red;
+}
+.square.yellow3{
+  @extend .square;
+        background-color: $brand-yellow-secondary2;
+}
+.square.blue2{
+  @extend .square;
+        background-color: $brand-blue-secondary;
+}
+
+
 
 table {
   width: 100%;
