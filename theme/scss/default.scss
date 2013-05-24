@@ -198,6 +198,7 @@ slides > slide {
       height: 98%;
     }
   }
+
 }
 
 slides.layout-faux-widescreen > slide {
@@ -834,6 +835,15 @@ article.smaller {
   article > p {
     margin-top: 2em;
     font-size: 20pt;
+  }
+
+  address {
+    margin-top: 2em;
+    a {
+    font-size: 20pt;
+    color: inherit;
+
+    }
   }
 
   > p {
