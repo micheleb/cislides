@@ -391,6 +391,10 @@ code {
   color: black;
 }
 
+article {
+  line-height: 1.5;
+}
+
 iframe {
   width: 100%;
   height: $slide-height - ($slide-top-bottom-padding * 2) - ($article-content-top-padding * 2);
@@ -427,6 +431,10 @@ button:not(:disabled):active {
 
 :disabled {
   color: $gray-2;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .blue {
@@ -493,6 +501,7 @@ button:not(:disabled):active {
     display: block;
     height: 1em;
     width: 1em;
+    margin-right: 0.75em;
     float: left;
 }
 .square.green2{
@@ -572,6 +581,18 @@ slide.fill {
   background-repeat: no-repeat;
   @include border-radius($slide-border-radius);
   @include background-size(cover);
+}
+
+img.fotofinder {
+  height: 460px;
+  vertical-align: middle;
+  margin-left: 2em;
+}
+
+img.transformer {
+  height: 140px;
+  vertical-align: middle;
+  margin-right: 2em;
 }
 
 /* Size variants */
@@ -878,7 +899,7 @@ article.smaller {
 
   article > p {
     margin-top: 2em;
-    font-size: 20pt;
+    font-size: 20pt
   }
 
   address {
@@ -961,6 +982,10 @@ aside.gdbar {
       margin-top: 2em;
     }
   }
+}
+
+.lines-compressed {
+  line-height: 1.2;
 }
 
 .quote {
