@@ -391,6 +391,10 @@ code {
   color: black;
 }
 
+article {
+  line-height: 1.5;
+}
+
 iframe {
   width: 100%;
   height: $slide-height - ($slide-top-bottom-padding * 2) - ($article-content-top-padding * 2);
@@ -895,7 +899,7 @@ article.smaller {
 
   article > p {
     margin-top: 2em;
-    font-size: 20pt;
+    font-size: 20pt
   }
 
   address {
@@ -978,6 +982,10 @@ aside.gdbar {
       margin-top: 2em;
     }
   }
+}
+
+.lines-compressed {
+  line-height: 1.2;
 }
 
 .quote {
