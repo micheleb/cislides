@@ -312,11 +312,14 @@ ul {
     }
   }
 
+  &:not(.nobull){
   > li:before {
     content: '\00B7';
     margin-left: -1em;
     position: absolute;
     font-weight: 600;
+  }
+
   }
  
   ul {
