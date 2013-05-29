@@ -62,7 +62,7 @@ body {
 slides > slide {
   display: none;
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 26px;
+  font-size: 44px;
   color: $gray-3;
   //@include background(linear-gradient(white, white 85%, $gray-1));
   //background-color: white;
@@ -279,14 +279,14 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 70px;
+  line-height: 70px;
   letter-spacing: -2px;
   color: $gray-4;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 47px;
   letter-spacing: -1px;
   line-height: 2;
   font-weight: inherit;
@@ -392,7 +392,7 @@ code {
 }
 
 article {
-  line-height: 1.5;
+  line-height: 1;
 }
 
 iframe {
@@ -584,15 +584,15 @@ slide.fill {
 }
 
 img.fotofinder {
-  height: 460px;
+  height: 610px;
   vertical-align: middle;
-  margin-left: 2em;
+  margin-left: 4.75em;
 }
 
 img.transformer {
   height: 140px;
   vertical-align: middle;
-  margin-right: 2em;
+  margin-right: 4.75em;
 }
 
 /* Size variants */
@@ -872,7 +872,7 @@ article.smaller {
 }
 
 .segue {
-  padding: $slide-left-right-padding $slide-left-right-padding * 2;
+  padding: 80px 120px;
 
   h2 {
     color: $gray-1;
@@ -985,7 +985,7 @@ aside.gdbar {
 }
 
 .lines-compressed {
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .quote {
