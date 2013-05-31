@@ -584,6 +584,16 @@ slide.fill {
   @include background-size(cover);
 }
 
+
+
+
+
+
+
+/*
+ * Cis-Developers definitions
+ */
+
 img.fotofinder {
   height: 610px;
   vertical-align: middle;
@@ -626,6 +636,24 @@ img.lower_center{
   vertical-align: bottom;
   float: center;
 }
+
+.quadri_generali article {
+  width: 1200px;
+  line-height: 1.5;
+  & li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+/*
+ * End Cis-Developers definitions
+ */
+
+
+
+
+
 
 
 /* Size variants */
