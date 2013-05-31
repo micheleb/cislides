@@ -84,6 +84,7 @@ SlideDeck.prototype.onDomLoaded_ = function(e) {
   this.updateSlides_();
 
   // Add slide numbers and total slide count metadata to each slide.
+  // Also, add the go-to dialog if needed
   var that = this;
   for (var i = 0, slide; slide = this.slides[i]; ++i) {
     slide.dataset.slideNum = i + 1;
@@ -96,6 +97,8 @@ SlideDeck.prototype.onDomLoaded_ = function(e) {
         window.setTimeout(function() {
           that.toggleOverview();
         }, 500);
+      } else if (e.target.id == 'goToButton') {
+        that.goTo(e);
       }
     }, false);
   }
@@ -113,6 +116,18 @@ SlideDeck.prototype.onDomLoaded_ = function(e) {
     }
   //}
 };
+
+SlideDeck.prototype.goTo = function(e) {
+  var slideNumber = document.getElementById('go-to-page').value;
+  if (!isNaN(slideNumber) && slideNumber > 0 && slideNumber <= this.slides.length) {
+    var slide = this.slides[this.curSlide_];
+    this.loadSlide(slideNumber);
+    document.body.classList.toggle('go-to');
+    goToDialog = document.getElementById('goToDialog');
+    slide.removeChild(goToDialog);
+    e.preventDefault();
+  }
+}
 
 /**
  * @private
@@ -168,6 +183,9 @@ SlideDeck.prototype.onPopState_ = function(e) {
 SlideDeck.prototype.onBodyKeyDown_ = function(e) {
   if (/^(input|textarea)$/i.test(e.target.nodeName) ||
       e.target.isContentEditable) {
+    if (e.target.id == 'go-to-page' && e.keyCode == 13) {
+      this.goTo(e);
+    }
     return;
   }
 
@@ -205,6 +223,11 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
     case 38: // up arrow
       this.prevSlide();
       e.preventDefault();
+      break;
+
+    case 71: // G: go to slide num
+      e.preventDefault();
+      this.showGoToDialog();
       break;
 
     case 72: // H: Toggle code highlighting
@@ -279,6 +302,26 @@ SlideDeck.prototype.toggleOverview = function() {
   document.body.classList.toggle('overview');
 
   this.focusOverview_();
+};
+
+/**
+ * CiS-added go to dialog
+ */
+SlideDeck.prototype.showGoToDialog = function() {
+  var goTo = document.body.classList.contains('go-to');
+  var slide = this.slides[this.curSlide_];
+  if (goTo) {
+    goToDialog = document.getElementById('goToDialog');
+    slide.removeChild(goToDialog);
+  } else {
+    var el = document.createElement('div');
+    el.classList.add('goTo');
+    el.id = 'goToDialog';
+    el.innerHTML = 'Go to: <input type="TEXT" id="go-to-page" placeholder="Page Number" />';
+    slide.appendChild(el);
+    document.getElementById("go-to-page").focus();
+  }
+  document.body.classList.toggle('go-to');
 };
 
 /**
