@@ -608,6 +608,9 @@ slide.fill {
 /*
  * Cis-Developers definitions
  */
+.underlined {
+  text-decoration: underline;
+}
 
 img.fotofinder {
   height: 610px;
@@ -627,38 +630,66 @@ img.patient {
 //  margin-right: 4.75em;
 }
 
-img.three{
+/* img.three{
   width: 40%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 img.upper_left{
   @extend img.three;
   vertical-align: top;
   margin-right: 60px;
   left: 0px;
 }
+
 img.upper_right{
   @extend img.three;
   vertical-align: top;
   margin-left: 60px;
   right: 0px;
-}
+} */
+
 img.lower_center{
-  @extend img.three;
-  vertical-align: bottom;
-  float: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.quadri_generali article, .navigazione article {
+.quadri_generali article {
   width: 1200px;
   line-height: 1.5;
   & li {
     margin-top: 2em;
     margin-bottom: 2em;
   }
+}
+
+.navigazione article {
+  line-height: 1.5;
+  & img {
+    height: 250px;
+    margin-top: 0.2em;
+    margin-right: 0.8em;
+  }
+}
+
+.quadri article, .lesioni article, .analisi article {
+  margin-top: 0px;
+  & div.center_h {
+    text-align: center;
+  }
+  & img {
+    width: 40%;
+    display: inline-block;
+    margin: 0 1em 20px 1em;
+  }
+}
+
+.analisi article div.center_h {
+  margin-top: 2em;
 }
 
 /*
@@ -902,6 +933,12 @@ article.smaller {
 
 .flexbox.vright {
   @include flex-right-center;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox.vbottom {
+  @include flex-center-bottom;
   height: 100%;
   width: 100%;
 }
