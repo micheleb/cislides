@@ -46,6 +46,12 @@
   @include box-pack(center);
 }
 
+@mixin flex-center-bottom {
+  @include box-orient(vertical);
+  @include box-align(center);
+  @include box-pack(end);
+}
+
 /**
  * Base SlideDeck Styles
  */
