@@ -694,6 +694,21 @@ img.lower_center{
   margin-top: 2em;
 }
 
+.esperimenti article, .malfunzionamenti article {
+  line-height: 1.3;
+  li {
+    margin-bottom: 0.75em;
+  }
+}
+
+.comportamento article {
+  line-height: 1.2;
+  margin-top: 15px;
+  li {
+    margin-bottom: 0.6em;
+  }
+}
+
 /*
  * End Cis-Developers definitions
  */
