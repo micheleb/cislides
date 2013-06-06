@@ -627,37 +627,23 @@ img.transformer {
 img.patient {
   height: 610px;
   vertical-align: middle;
-//  margin-right: 4.75em;
 }
-
-
-/* img.three{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-img.upper_left{
-  @extend img.three;
-  vertical-align: top;
-  margin-right: 30px;
-  left: 0px;
-  margin-left: 0px;
-}
-
-img.upper_right{
-  @extend img.three;
-  vertical-align: top;
-  margin-left: 30px;
-  right: 0px;
-} */
 
 img.lower_center{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.introduzione h2 {
+  margin-bottom: 1.2em;
+}
+
+.introduzione article {
+  & li {
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+  }
 }
 
 .quadri_generali article {
@@ -690,6 +676,15 @@ img.lower_center{
   }
 }
 
+.struttura article {
+  ol {
+    margin-left: 5em;
+  }
+  ul {
+    margin-left: 1em;
+  }
+}
+
 .analisi article div.center_h {
   margin-top: 2em;
 }
@@ -701,11 +696,16 @@ img.lower_center{
   }
 }
 
-.comportamento article {
-  line-height: 1.2;
-  margin-top: 15px;
-  li {
+.comportamento  {
+  h3 {
     margin-bottom: 0.6em;
+  }
+  article {
+    line-height: 1.2;
+    margin-top: 15px;
+    li {
+      margin-bottom: 0.9em;
+    }
   }
 }
 

@@ -910,94 +910,96 @@ img.patient {
   vertical-align: middle;
 }
 
-/* img.three{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-img.upper_left{
-  @extend img.three;
-  vertical-align: top;
-  margin-right: 30px;
-  left: 0px;
-  margin-left: 0px;
-}
-
-img.upper_right{
-  @extend img.three;
-  vertical-align: top;
-  margin-left: 30px;
-  right: 0px;
-} */
-/* line 657, ../scss/default.scss */
+/* line 632, ../scss/default.scss */
 img.lower_center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 663, ../scss/default.scss */
+/* line 638, ../scss/default.scss */
+.introduzione h2 {
+  margin-bottom: 1.2em;
+}
+
+/* line 643, ../scss/default.scss */
+.introduzione article li {
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+
+/* line 649, ../scss/default.scss */
 .quadri_generali article {
   width: 1200px;
   line-height: 1.5;
 }
-/* line 666, ../scss/default.scss */
+/* line 652, ../scss/default.scss */
 .quadri_generali article li {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-/* line 672, ../scss/default.scss */
+/* line 658, ../scss/default.scss */
 .navigazione article {
   line-height: 1.5;
 }
-/* line 674, ../scss/default.scss */
+/* line 660, ../scss/default.scss */
 .navigazione article img {
   height: 250px;
   margin-top: 0.2em;
   margin-right: 0.8em;
 }
 
-/* line 681, ../scss/default.scss */
+/* line 667, ../scss/default.scss */
 .quadri article, .lesioni article, .analisi article {
   margin-top: 0px;
 }
-/* line 683, ../scss/default.scss */
+/* line 669, ../scss/default.scss */
 .quadri article div.center_h, .lesioni article div.center_h, .analisi article div.center_h {
   text-align: center;
 }
-/* line 686, ../scss/default.scss */
+/* line 672, ../scss/default.scss */
 .quadri article img, .lesioni article img, .analisi article img {
   width: 40%;
   display: inline-block;
   margin: 0 1em 20px 1em;
 }
 
-/* line 693, ../scss/default.scss */
+/* line 680, ../scss/default.scss */
+.struttura article ol {
+  margin-left: 5em;
+}
+/* line 683, ../scss/default.scss */
+.struttura article ul {
+  margin-left: 1em;
+}
+
+/* line 688, ../scss/default.scss */
 .analisi article div.center_h {
   margin-top: 2em;
 }
 
-/* line 697, ../scss/default.scss */
+/* line 692, ../scss/default.scss */
 .esperimenti article, .malfunzionamenti article {
   line-height: 1.3;
 }
-/* line 699, ../scss/default.scss */
+/* line 694, ../scss/default.scss */
 .esperimenti article li, .malfunzionamenti article li {
   margin-bottom: 0.75em;
 }
 
-/* line 704, ../scss/default.scss */
+/* line 700, ../scss/default.scss */
+.comportamento h3 {
+  margin-bottom: 0.6em;
+}
+/* line 703, ../scss/default.scss */
 .comportamento article {
   line-height: 1.2;
   margin-top: 15px;
 }
-/* line 707, ../scss/default.scss */
+/* line 706, ../scss/default.scss */
 .comportamento article li {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.9em;
 }
 
 /*

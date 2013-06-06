@@ -43,6 +43,23 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
   </slide>
 
+  <slide class="introduzione">
+    <hgroup>
+      <h2>Questa presentazione</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>l'applicazione sviluppata: MoleMapper</li>
+        <li>struttura di una visita</li>
+        <li>struttura dell'applicazione</li>
+        <li>dimostrazione pratica</li>
+        <li>sviluppi previsti</li>
+        <li>in caso di&hellip;</li>
+        <li>domande</li>
+      </ul>
+    </article>
+  </slide>
+
   <slide>
     <hgroup>
       <h2>MoleMapper</h2>
@@ -69,13 +86,21 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
-  <slide>
+  <slide class="struttura">
     <hgroup>
       <h2>Struttura della visita</h2>
     </hgroup>
     <article >
-      <p>Abbiamo individuato 9 <b>passi</b> raggruppati in 4 <b>fasi</b></p>
+      <p>Abbiamo individuato 4 <b>fasi</b></p>
       <div class="build lines-compressed">
+
+        <ul style="float:left" class="nobull">
+        
+        <li><span class="square red"></span>pazienti</li>
+        <li><span class="square blue2"></span>quadri</li>
+        <li><span class="square green2"></span>lesioni</li>
+        <li><span class="square yellow3"></span>analisi</li>
+        </ul>
         <ol style="float:left">
           <li class="red">anagrafica (visite precedenti)</li>
           <li class="blue2">foto quadri generali</li>
@@ -87,14 +112,6 @@ URL: https://code.google.com/p/io-2012-slides
           <li class="yellow3">riepilogo</li>
           <li class="yellow3">referto</li>
         </ol>
-
-        <ul style="float:left" class="nobull">
-        
-        <li><span class="square red"></span>pazienti</li>
-        <li><span class="square blue2"></span>quadri</li>
-        <li><span class="square green2"></span>lesioni</li>
-        <li><span class="square yellow3"></span>analisi</li>
-        </ul>
       </div>
     </article>
   </slide>
@@ -105,8 +122,8 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article>
       <ul class="build">
-        <li class="build">all'interno <span class="italic">di una fase</span> ci si muove ciclicamente avanti-indietro<img src="images/navigation_back_next.png"/></li>
-        <li class="build">per spostarsi <span class="italic">fra fasi</span> si usano i pulsanti di cambio sezione<img class="build" src="images/navigation_sections.png"/></li>
+        <li class="build">all'interno <span class="italic">di una fase</span> ci si muove avanti-indietro<img src="images/navigation_back_next.png"/></li>
+        <li class="build">per spostarsi <span class="italic">tra fasi</span> si usano i pulsanti di cambio sezione<img class="build" src="images/navigation_sections.png"/></li>
       </ul>    
     </article>
   </slide>
@@ -117,7 +134,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h3>Pazienti</h3>
     </hgroup>
     <article>
-      <div class="flexbox vcenter"><img src="images/patient.jpg" class="patient" alt="ActPatient" title="ActPatient"> </div>
+      <div class="flexbox vcenter build"><img src="images/patient.jpg" class="patient" alt="ActPatient" title="ActPatient"> </div>
     </article>
   </slide>
   <slide class="quadri">
@@ -211,7 +228,6 @@ URL: https://code.google.com/p/io-2012-slides
         <li>Come dire all'applicazione di importare le lesioni marcate la volta precedente?</li>
         <li>Dove ritrovare tutte le lesioni marcate la volta precedente?</li>
         <li>Dove marcare una lesione presente in più di un quadro generale?</li>
-        <li>Come modificare una visita passata?</li>
       </ul>    
     </article>
   </slide>
